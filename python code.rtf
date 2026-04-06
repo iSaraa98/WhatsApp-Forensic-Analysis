@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 import sqlite3\
+from datetime import datetime\
+\
+conn = sqlite3.connect("/Users/saraali/Desktop/WhatsApp_DB/ChatStorage.sqlite")\
+cursor = conn.cursor()\
+\
+cursor.execute("""\
+SELECT Z_PK, ZTEXT, ZMESSAGEDATE\
+FROM ZWAMESSAGE\
+WHERE ZTEXT IS NOT NULL\
+ORDER BY ZMESSAGEDATE DESC\
+LIMIT 20;\
+""")\
+\
+rows = cursor.fetchall()\
+\
+for row in rows:\
+    z_pk, text, apple_time = row\
+    unix_time = apple_time + 978307200\
+    readable_time = datetime.fromtimestamp(unix_time)\
+    print("ID:", z_pk)\
+    print("Date:", readable_time)\
+    print("Message:", text)\
+    print("-" * 50)\
+\
+\pard\pardeftab720\sl480\sa160\partightenfactor0
+
+\f1\fs32 \cf2 \expnd0\expndtw0\kerning0
+conn.close()}
