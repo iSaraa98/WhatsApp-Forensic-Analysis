@@ -1,4 +1,4 @@
-# WhatssApp iOS Forensic Analysis
+# WhatsApp iOS Forensic Analysis
 
 ## Overview
 This project presents a forensic framework for extracting and reconstructing WhatsApp artifacts from encrypted iOS backups. The framework focuses on converting raw forensic data into structured and readable communication records for digital forensic investigations.
