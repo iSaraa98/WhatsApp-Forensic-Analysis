@@ -85,7 +85,11 @@ python src/timestamp_conversion.py
 The framework successfully reconstructed WhatsApp message timelines and organized extracted records into readable chronological structures.
 
 ## Data Availability
-Due to privacy and ethical considerations, the original forensic data and backups are not publicly shared.
+The dataset used in this research was obtained from an encrypted iOS backup for forensic analysis purposes.
+
+Due to privacy and ethical considerations, the original forensic dataset is not publicly shared.
+
+Sample outputs, screenshots, and implementation files are available in this repository.
 
 ## GitHub Repository
 Add your repository link here.
