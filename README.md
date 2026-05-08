@@ -79,7 +79,7 @@ To reproduce the results:
 ```bash
 pip install -r requirements.txt
 python src/timestamp_conversion.py
----
+```
 
 ## Results
 The framework successfully reconstructed WhatsApp message timelines and organized extracted records into readable chronological structures.
