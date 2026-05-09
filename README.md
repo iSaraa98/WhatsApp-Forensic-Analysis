@@ -82,25 +82,6 @@ To reproduce the results:
 4. Run the Python script for timestamp conversion
 5. Generate the timeline visualization using Google Colab
 
-## Reproducibility
-
-To reproduce the results:
-
-```bash
-pip install -r requirements.txt
-python src/timestamp_conversion.py
-```
-
-The proposed forensic framework successfully extracted and reconstructed WhatsApp artifacts from an encrypted iOS backup.
-
-The extracted data included:
-- Message content
-- Sender and receiver identifiers
-- Message timestamps
-
-Apple Epoch timestamps were converted into human-readable format using Python, which improved the interpretability of the extracted forensic artifacts.
-
-The generated timeline visualization helped identify communication patterns and chronological user activity.
 
 ---
 
