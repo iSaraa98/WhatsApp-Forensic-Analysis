@@ -77,7 +77,7 @@ To reproduce the results:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ---
 ## Results
