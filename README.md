@@ -120,11 +120,14 @@ This figure shows the processed WhatsApp messages after timestamp conversion and
 
 ---
 
-### Message Timeline Distribution
+
+### Message Timeline Visualization
 
 This figure presents the chronological distribution of extracted WhatsApp messages over time.
 
 ![Timeline](screenshots/timeline_distribution.png)
+
+---
 
 ## Data Availability
 The dataset used in this research was obtained from an encrypted iOS backup for forensic analysis purposes.
