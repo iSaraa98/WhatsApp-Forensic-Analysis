@@ -114,7 +114,7 @@ This figure demonstrates the Python-based conversion of Apple timestamps into hu
 
 ### Processed WhatsApp Messages
 
-This figure presents the chronological distribution of extracted WhatsApp messages over time.
+This figure shows the processed WhatsApp messages after timestamp conversion and structuring.
 
 ![Timeline](screenshots/timeline_distribution.png)
 
@@ -123,7 +123,7 @@ This figure presents the chronological distribution of extracted WhatsApp messag
 
 
 ### Message Timeline Visualization
-This figure shows the processed WhatsApp messages after timestamp conversion and structuring.
+This figure presents the chronological distribution of extracted WhatsApp messages over time.
 
 ![Processed Messages](screenshots/processed_messages.png)
 
