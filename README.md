@@ -49,17 +49,6 @@ The framework follows these steps:
 6. Organize messages chronologically
 7. Generate timeline visualization
 
----
-
-## Results
-
-### Structured WhatsApp Messages
-
-![Structured Messages](results/figures/table.png)
-
-### Message Timeline Visualization
-
-![Timeline](results/figures/timeline.png)
 
 ---
 
@@ -82,6 +71,20 @@ To reproduce the results:
 4. Run the Python script for timestamp conversion
 5. Generate the timeline visualization using Google Colab
 
+
+---
+## Results
+
+The proposed forensic framework successfully extracted and reconstructed WhatsApp artifacts from an encrypted iOS backup.
+
+The extracted data included:
+- Message content
+- Sender and receiver identifiers
+- Message timestamps
+
+Apple Epoch timestamps were converted into human-readable format using Python, which improved the interpretability of the extracted forensic artifacts.
+
+The generated timeline visualization helped identify communication patterns and chronological user activity.
 
 ---
 
