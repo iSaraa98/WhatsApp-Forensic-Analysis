@@ -31,9 +31,12 @@ The dataset used in this research was obtained from an encrypted iOS backup for 
 Due to privacy and ethical considerations, the original WhatsApp database is not publicly available.
 
 The extracted artifacts include:
+
 - Message content (ZTEXT)
 - Message timestamps (ZMESSAGEDATE)
 - Sender and receiver identifiers
+- Chronological communication records
+- SQLite database records
 
 ---
 
@@ -70,6 +73,10 @@ To reproduce the results:
 3. Execute the SQL query to retrieve WhatsApp messages
 4. Run the Python script for timestamp conversion
 5. Generate the timeline visualization using Google Colab
+6. Install the required Python libraries using:
+
+```bash
+pip install -r requirements.txt
 
 
 ---
