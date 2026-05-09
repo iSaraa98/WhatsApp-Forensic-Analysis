@@ -134,8 +134,8 @@ Due to privacy and ethical considerations, the original forensic dataset is not 
 Sample outputs, screenshots, and implementation files are available in this repository.
 
 ## GitHub Repository
-Add your repository link here.
+(https://github.com/iSaraa98/WhatssApp-Forensic-Analysis)
 
 ## DOI
-Add your DOI link here after generating it from Zenodo.
+(https://doi.org/10.5281/zenodo.20097011)
 
