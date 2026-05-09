@@ -18,9 +18,10 @@ This project presents a forensic framework for extracting and reconstructing Wha
 - Matplotlib
 
 ## Project Structure
-- `code/` : Python scripts and notebooks
-- `screenshots/` : Result screenshots and generated graphs
+- `code/` : Python scripts and Google Colab implementation
+- `screenshots/` : Figures, graphs, and forensic analysis screenshots
 - `requirements.txt` : Required Python libraries
+- `README.md` : Project documentation and description
 
 
 ## Dataset Description
@@ -71,6 +72,15 @@ The framework follows these steps:
 
 ---
 
+## Reproducibility
+
+To reproduce the results:
+
+1. Extract the WhatsApp database from the encrypted iOS backup
+2. Open the database using DB Browser for SQLite
+3. Execute the SQL query to retrieve WhatsApp messages
+4. Run the Python script for timestamp conversion
+5. Generate the timeline visualization using Google Colab
 
 ## Reproducibility
 
@@ -81,8 +91,56 @@ pip install -r requirements.txt
 python src/timestamp_conversion.py
 ```
 
-## Results
-The framework successfully reconstructed WhatsApp message timelines and organized extracted records into readable chronological structures.
+The proposed forensic framework successfully extracted and reconstructed WhatsApp artifacts from an encrypted iOS backup.
+
+The extracted data included:
+- Message content
+- Sender and receiver identifiers
+- Message timestamps
+
+Apple Epoch timestamps were converted into human-readable format using Python, which improved the interpretability of the extracted forensic artifacts.
+
+The generated timeline visualization helped identify communication patterns and chronological user activity.
+
+---
+
+### SQL Query Execution
+
+This figure shows the SQL query used to extract WhatsApp message artifacts from the SQLite database.
+
+![SQL Query](screenshots/sql_query_execution.png)
+
+---
+
+### Raw Extracted Data
+
+This figure presents the raw WhatsApp records before timestamp normalization.
+
+![Raw Data](screenshots/raw_data.png)
+
+---
+
+### Timestamp Conversion
+
+This figure demonstrates the Python-based conversion of Apple timestamps into human-readable format.
+
+![Timestamp Conversion](screenshots/timestamp_conversion.png)
+
+---
+
+### Processed WhatsApp Messages
+
+This figure shows the processed WhatsApp messages after timestamp conversion and structuring.
+
+![Processed Messages](screenshots/processed_messages.png)
+
+---
+
+### Message Timeline Distribution
+
+This figure presents the chronological distribution of extracted WhatsApp messages over time.
+
+![Timeline](screenshots/timeline_distribution.png)
 
 ## Data Availability
 The dataset used in this research was obtained from an encrypted iOS backup for forensic analysis purposes.
